@@ -1,1 +1,37 @@
-right
+{# Load the tag library #}
+{% load bootstrap5 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+
+<body style="background-color: darkslateblue; margin:auto; vertical-align: middle; height: 100%;">
+
+
+    <div class="container mt-5 text-center pt-3" style="background-color: lavender; padding: 20px 20px 20px 20px;">
+
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <h2 style = color:darkslateblue> Why I am Right for iGEM</h2>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container mt-5" style="background-color: lavender; padding: 20px 20px 20px 20px;">
+        <div class="container" style = color:darkslateblue>
+            My interest in iGEM lies in my motivation to do something meaningful with my CS degree. I enjoy CS, but I want to do something helpful with it, not just work in a large tech company. I enjoy working with a team, and have experience doing so since most of my classes have been team project based in the past two semesters. I enjoy problem solving and would like to apply my knowledge of computer science and data science to helping the iGEM team. I have experience with a wide array of programming languages and am open to learning a new one if that is what the team is using. Being in CS has taught me to pick up new skills quickly through my own research. While I do not have much experience with biology I have taken general chemistry lectures and labs. With all the classes I have taken in CS, math, data science, physics, and chemistry I have a general understanding of all the disciplines of STEM. I am willing to work hard on the team and pick up new skills. 
+        </div>
+
+    </div>
+
+    <div class="container mt-5 text-center pt-3" style="background-color: lavender; padding: 20px 20px 20px 20px;">
+        <a style = color:darkslateblue href="{% url 'home' %}">Back</a>
+    </div>
+
+    
+</body>

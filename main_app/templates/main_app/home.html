@@ -9,16 +9,41 @@
 {% bootstrap_messages %}
 
 
-<body style="background-color: darkslateblue;">
+<head>
+    <style>
+        #footer {
+            position: fixed;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            background: lavender;
+        }
+    </style>
 
-    <div class ="text-center pt-3">
+</head>
 
-        <div class="container-sm p-3" style="background-color: lavender">
-            <h2 style = color:darkslateblue> Welcome</h2>
+<body style="background-color: darkslateblue; margin:auto; vertical-align: middle;">
 
+
+    <div class="container mt-5 text-center pt-3" style="background-color: lavender; padding: 20px 20px 20px 20px;">
+
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <h2 style = color:darkslateblue> Welcome</h2>
+                <div style = color:darkslateblue>
+                    <a style = color:darkslateblue href="{% url 'skills' %}">My Experience</a>
+                    <br>
+                    <a style = color:darkslateblue href="{% url 'right' %}">Why I am Right for iGEM</a>
+                </div>
+
+            </div>
         </div>
+
     </div>
 
-
+    <div id = "footer">
+        <p style = color:darkslateblue>Created by Kayla Sprincis</p>
+    </div>
 
 </body>

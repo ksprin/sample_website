@@ -1,0 +1,99 @@
+{# Load the tag library #}
+{% load bootstrap5 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+
+<body style="background-color: darkslateblue; margin:auto; vertical-align: middle; height: 100%;">
+
+
+    <div class="container mt-5 text-center pt-3" style="background-color: lavender; padding: 20px 20px 20px 20px;">
+
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <h2 style = color:darkslateblue> My Experience</h2>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container mt-5" style="background-color: lavender; padding: 20px 20px 20px 20px;">
+        <h3 class = "text-center pt-3" style = color:darkslateblue>Relevant Classes</h3>
+        <div class="container" style = color:darkslateblue>
+            <div class="row">
+              <div class="col-sm">
+                Current Classes:
+                <li>Data Structures and Algorithms 2 (CS 3100)</li>
+                <li>Advanced Software Development (CS 3240)</li>
+                <li>Foundations of Machine Learning (DS 3001)</li>
+                <li>Communicating with Data (DS 2003)</li>
+              </div>
+              <div class="col-sm">
+                Previous Classes
+                <li>Computer Systems and Organization (CS 2130)</li>
+                <li>Discrete Mathematic (CS 2120)</li>
+                <li>Data Structures and Algorithms 1 (CS 2100)</li>
+                <li>Probability (APMA 3100)</li>
+                <li>Intro to Data Science with R (STAT 1601)</li>
+              </div>
+              <div class="col-sm">
+                Transfer Credits
+                <li>Intro to College Chemistry I and II (CHEM 1410 and 1420)</li>
+                <li>Multivariable Calculus (APMA 2120)</li>
+                <li>Intro to Physics I and II for Engineers (PHYS 1429 and 2429)</li>
+                <li>Linear Algebra (APMA 3080)</li>
+              </div>
+            </div>
+          </div>
+
+    </div>
+
+    <div class="container mt-5" style="background-color: lavender; padding: 20px 20px 20px 20px;">
+        <h3 class = "text-center pt-3" style = color:darkslateblue>Previous CS Projects by Class</h3>
+        <div class = " text-center pt-3" style = color:darkslateblue>Link to my GitHub: </div>
+
+        <div class="container text-center pt-3">
+        <a href="https://github.com/ksprin" target="_blank" ><button style = "background-color: darkslateblue; color: lavender;">ksprin on Github </button></a>
+        </div>
+
+        <br>
+        <div class="container" style = color:darkslateblue>
+            <div class="row">
+              <div class="col-sm">
+                CS 3240
+                <br>
+                This class has a semester long group project where teams build web application using the django framework, and deploy their work on Heroku. 
+                In this project I have gained experience in web-design, using databases, and using the Google Maps API. 
+              </div>
+              <div class="col-sm">
+                CS 3100
+                <br>
+                This class has a focus on complex algorithms, both how to prove them and create them. In this class I have created Greedy, Dynamic, and several Graph algorithms.
+                Additionally I have worked on finding solutions within certian time complexities and proofs for the time complexities of algorithms. 
+              </div>
+              <div class="col-sm">
+                CS 3140
+                <br>
+                This class has a focus on the fundemental of lager software projects. In this class I worked on creating clean code, testing code, and UI.
+              </div>
+            </div>
+          </div>
+
+
+    </div>
+
+    <div class="container mt-5 text-center pt-3" style="background-color: lavender; padding: 20px 20px 20px 20px;">
+        <h3 style = color:darkslateblue>Work Experience</h3>
+    </div>
+
+    <div class="container mt-5 text-center pt-3" style="background-color: lavender; padding: 20px 20px 20px 20px;">
+        <a style = color:darkslateblue href="{% url 'home' %}">Back</a>
+    </div> 
+
+</body>

@@ -21,3 +21,4 @@ django-storages
 boto3
 python-dotenv
 Pillow
+django-heroku
